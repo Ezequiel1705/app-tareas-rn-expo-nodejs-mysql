@@ -10,15 +10,6 @@ const background = require('../Client/assets/background.png')
 
 export default function App() {
 
-  /* const [loaded] = useFonts({
-    Koulen: require('./assets/Fonts/Koulen/Koulen-Regular.ttf'),
-    LatoRegular: require('./assets/Fonts/Lato/Lato-Regular.ttf')
-  }); */
-  
-  /* if (!loaded) {
-    return <ActivityIndicator/>;
-  } */
-
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
@@ -73,7 +64,6 @@ const styles = StyleSheet.create({
     fontWeight: "800",
     fontSize: 30,
     marginBottom: 15,
-    /* fontFamily: 'Koulen' */
   },
   contentContainerStyle: {
     padding: 16
