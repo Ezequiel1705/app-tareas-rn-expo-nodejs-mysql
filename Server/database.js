@@ -10,6 +10,7 @@ const pool = mysql
     database: process.env.MYSQL_DATABASE,
 })
 .promise();
+console.log('Conexion Succes')
  
 export async function getTodoByID (id) {
     const [row] = await pool.query(

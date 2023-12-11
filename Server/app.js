@@ -16,7 +16,7 @@ import cors from 'cors';
 /* object */
 const corsOptions = { 
     origin: process.env.ROO_CLIENT,
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
 };
 
@@ -73,3 +73,5 @@ const server = app.listen(PORT, () => {
     console.log(`Server running in port ${PORT}`)
 });
 server.on("error", err => console.log(err));
+
+export default app;
