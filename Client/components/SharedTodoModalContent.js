@@ -12,7 +12,7 @@ export default function SharedTodoModalContent({id, title, shared_with_id, compl
     }, []);
 
     async function fetchInfo() {
-        const response = await fetch(`http://192.168.1.113:8080/todos/shared_todos/${id}`, 
+        const response = await fetch(`http://192.168.1.117:8080/api/todos/shared_todos/${id}`, 
         /* {
           headers: {
             "x-api-key": "abcdef123456",

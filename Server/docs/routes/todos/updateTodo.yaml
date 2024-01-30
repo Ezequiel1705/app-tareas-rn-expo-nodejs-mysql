@@ -1,0 +1,27 @@
+paths:
+  /todos/{id}:
+    put:
+      summary: Updates a Todo
+      tags:
+        - Todos
+      parameters:
+        - name: id
+          in: path
+          description: path parameter takes the product id
+          required: true
+          type: string
+      requestBody:
+        required: true
+        content: 
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Todo'
+      responses:
+        "200":
+          description: The updated todo item
+          content:
+            application/json:
+              schema:
+                $ref:'#/components/schemas/Todo'
+        "404":
+          description: Todo not found

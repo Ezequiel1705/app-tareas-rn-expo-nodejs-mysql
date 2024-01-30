@@ -1,0 +1,12 @@
+paths:
+  /todos/{id}:
+    delete:
+      summary: Delete the todo whit given id
+      tags:
+        - Todos
+      parameters:
+      - name: id
+      in: path
+      description: path parameter to delete
+      required: true
+      

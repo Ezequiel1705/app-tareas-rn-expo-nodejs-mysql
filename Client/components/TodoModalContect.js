@@ -8,7 +8,7 @@ export default function TodoModalContect({id, title}) {
     const [focus, setFocus] = useState(false);
 
     const handleSubmit = async () => {
-        const response = await fetch (`http://192.168.1.113:8080/todos/shared_todos`, 
+        const response = await fetch (`http://192.168.1.117:8080/api/todos/shared_todos`, 
         {
           headers:
           {

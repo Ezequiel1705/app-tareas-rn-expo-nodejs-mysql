@@ -1,0 +1,14 @@
+#NewTodo
+components:
+  requestBodies:
+    NewTodo:
+      type: object
+      required:
+        - nameTodo      
+      properties:
+        nameTodo:
+          type: string
+          description: "Name of the todo"
+      example:
+        nameTodo: "Two hours practicing piano"
+  

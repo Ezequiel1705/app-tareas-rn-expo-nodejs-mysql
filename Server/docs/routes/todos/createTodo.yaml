@@ -1,0 +1,19 @@
+paths:
+  /todos:
+    post:
+      summary: Create and store a new taks
+      tags:
+        - Todos
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/requestBodies/NewTodo'
+      responses:
+        "201":
+          description: New Todo successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todo'

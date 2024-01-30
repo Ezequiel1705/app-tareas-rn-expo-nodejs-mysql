@@ -45,7 +45,7 @@ export default function InputTask({ todos, setTodos }) {
     if (messageBody === "") {
       return;
     } else {
-      const response = await fetch("http://192.168.1.113:8080/todos/", {
+      const response = await fetch("http://192.168.1.117:8080/api/todos/", {
         headers: {
           "x-api-key": "abcdef123456",
           "Content-Type": "application/json",

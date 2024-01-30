@@ -1,0 +1,15 @@
+paths: 
+  /todos/{id}:
+    get:
+      summary: Return all todos in a db
+      tags:
+        - Todos
+      responses:
+        "200":
+          description: All todos available
+          content:
+            application/json:
+              schema:
+                type: array
+                items: 
+                  $ref: '#/components/schemas/Todo'

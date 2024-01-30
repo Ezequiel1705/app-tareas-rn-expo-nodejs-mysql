@@ -1,0 +1,18 @@
+#Todos
+components:
+  schemas:
+    Todo:
+      type: object
+      required:
+        - id
+        - nameTodo
+      properties:
+        id:
+          type: string
+          decription: Identifier of a task
+        nameTodo: 
+          type: string
+          description: Name of the task
+      example:
+        id: 2
+        nameTodo: "Buy groceries"
